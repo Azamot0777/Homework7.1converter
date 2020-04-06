@@ -1,0 +1,13 @@
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.exe
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.deps.json
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.runtimeconfig.json
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.runtimeconfig.dev.json
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.dll
+C:\AlifAcademy\Homework7.1Converter\bin\Debug\netcoreapp3.1\Homework7.1Converter.pdb
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.csprojAssemblyReference.cache
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.csproj.CoreCompileInputs.cache
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.AssemblyInfoInputs.cache
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.AssemblyInfo.cs
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.dll
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.pdb
+C:\AlifAcademy\Homework7.1Converter\obj\Debug\netcoreapp3.1\Homework7.1Converter.genruntimeconfig.cache
