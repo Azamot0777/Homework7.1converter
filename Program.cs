@@ -4,6 +4,8 @@ namespace Homework7_1Converter
 {
     class Converter
     {
+        public double usd { get; set; }
+        public double euro { get; set; }
 
     }
 
