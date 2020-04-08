@@ -4,38 +4,38 @@ namespace Homework7_1Converter
 {
     class Converter
     {
-        public double usd { get; set; }
-        public double euro { get; set; }
+        public static double usd { get; set; }
+        public static double euro { get; set; }
 
-        public double rubl { get; set; }
+        public static double rubl { get; set; }
 
         public Converter(double ust, double euroc, double rub)
         {
-            this.usd = ust;
-            this.euro = euroc;
-            this.rubl = rub;
+            usd = ust;
+            euro = euroc;
+            rubl = rub;
         }
         public static double cSomoniToUsd(double somoni)
         {
-            double usd = Math.Round(somoni * usd);
-            return usd;
+            double ust = Math.Round(somoni * usd);
+            return ust;
         }
         public static double cSomoniToEuro(double somoni)
         {
-            double euro = Math.Round(somoni * euro);
-            return euro;
+            double euroc = Math.Round(somoni * euro);
+            return euroc;
         }
         public static double cSomoniToRubl(double somoni)
         {
-            double rubl = Math.Round(somoni * rubl);
-            return rubl;
+            double rub = Math.Round(somoni * rubl);
+            return rub;
         }
-        public static double cUsdToSomoni(double us)
+        public static double cUsdToSomoni(double ust)
         {
             if (usd != 0)
             {
-                double som = Math.Round(ust / usd);
-                return som;
+                double somoni = Math.Round(ust / usd);
+                return somoni;
             }
             else
             {
@@ -47,8 +47,8 @@ namespace Homework7_1Converter
         {
             if (euro != 0)
             {
-                double som = Math.Round(euroc / euro);
-                return som;
+                double somoni = Math.Round(euroc / euro);
+                return somoni;
             }
             else
             {
@@ -58,10 +58,10 @@ namespace Homework7_1Converter
         }
         public static double cRublToSomoni(double rub)
         {
-            if (rub != 0)
+            if (rubl != 0)
             {
-                double som = Math.Round(rubl / rub, 4);
-                return som;
+                double somoni = Math.Round(rub / rubl, 4);
+                return somoni;
             }
             else
             {
@@ -77,7 +77,51 @@ namespace Homework7_1Converter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Converter h = new Converter(0.098, 0.091, 7.33);
+
+            Console.Write("Обмен валют на доллары,евро и рубли");
+            Console.WriteLine("Тип конвертации");
+            Console.WriteLine("Сомони в доллары : 1");
+            Console.WriteLine("Сомони в евро : 2");
+            Console.WriteLine("Сомони в рубли : 3");
+            Console.WriteLine("Доллары в сомони : 4");
+            Console.WriteLine("Евро в сомони : 5");
+            Console.WriteLine("Рубли в сомони : 6");
+
+            int choice;
+            while (true)
+            {
+                choice = int.Parse(Console.ReadLine());
+                if (choice < 1 || choice > 6) System.Console.WriteLine("Ошибка");
+                else break;
+            }
+            System.Console.WriteLine("Введите сумму : ");
+            double sum = double.Parse(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine($"{sum} сомони == {Converter.cSomoniToUsd(sum)} долларов");
+                    break;
+                case 2:
+                    Console.WriteLine($"{sum} сомони == {Converter.cSomoniToEuro(sum)} евро");
+                    break;
+                case 3:
+                    Console.WriteLine($"{sum} сомони == {Converter.cSomoniToRubl(sum)} рубли");
+                    break;
+                case 4:
+                    Console.WriteLine($"{sum} доллары == {Converter.cUsdToSomoni(sum)} сомони");
+                    break;
+                case 5:
+                    Console.WriteLine($"{sum} евро == {Converter.cEuroToSomoni(sum)} сомони");
+                    break;
+                case 6:
+                    Console.WriteLine($"{sum} рубли == {Converter.cRublToSomoni(sum)} сомони");
+                    break;
+                default:
+                    break;
+            }
+
+
         }
     }
 }
